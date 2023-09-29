@@ -1,0 +1,502 @@
+/* ======= Reset =======  */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/*   Colors root  */
+:root{
+    --yt-spec-icon-inactive: #fff;
+    --yt-spec-icon-disabled: #717171;
+    --yt-spec-brand-icon-inactive: #fff;
+    --yt-spec-text-primary: #f1f1f1;
+    --yt-spec-text-primary-inverse: #0f0f0f;
+    --ytd-searchbox-border-color: hsla(0, 0%, 53.3%, 0.4);
+    --ytd-searchbox-legacy-border-color: hsl(0, 0%, 18.82%);
+    --ytd-searchbox-legacy-border-shadow-color: hsla(0, 0%, 0%, 0);
+    --ytd-searchbox-legacy-button-color: hsla(0, 0%, 100%, 0.08);
+    --ytd-searchbox-legacy-button-border-color: hsl(0, 0%, 18.82%);
+    --ytd-searchbox-legacy-button-focus-color: hsla(0, 0%, 100%, 0.08);
+    --ytd-searchbox-legacy-button-hover-color: hsla(0, 0%, 100%, 0.08);
+    --ytd-searchbox-legacy-button-hover-border-color: hsl(0, 0%, 18.82%);
+    --ytd-searchbox-legacy-button-icon-color: hsla(0, 100%, 100%, 0.5);
+    --ytd-searchbox-background: hsl(0, 0%, 7%);
+    --ytd-searchbox-text-color: hsla(0, 100%, 100%, 0.88);
+    --yt-spec-base-background: #0f0f0f;
+    --yt-spec-raised-background: #212121;
+    --yt-spec-menu-background: #282828;
+    --yt-spec-inverted-background: #f1f1f1;
+    --yt-spec-additive-background: rgba(255, 255, 255, 0.1);
+    --yt-spec-outline: rgba(255, 255, 255, 0.2);
+    --yt-spec-shadow: rgba(0, 0, 0, 0.25);
+    --yt-spec-text-primary: #fff;
+    --yt-spec-text-secondary: #aaa;
+    --yt-spec-text-disabled: #717171;
+    --yt-spec-text-primary-inverse: #030303;
+    --yt-spec-call-to-action: #3ea6ff;
+    --yt-spec-call-to-action-inverse: #065fd4;
+    --yt-spec-suggested-action: #263850;
+    --yt-spec-suggested-action-inverse: #def1ff;
+    --yt-spec-icon-active-other: #fff;
+    --yt-spec-icon-inactive: #909090;
+    --yt-spec-icon-disabled: #606060;
+    --yt-spec-button-chip-background-hover: rgba(255, 255, 255, 0.2);
+    --yt-spec-touch-response: #fff;
+    --yt-spec-touch-response-inverse: #000;
+    --yt-spec-brand-icon-active: #fff;
+    --yt-spec-brand-icon-inactive: #909090;
+    --yt-spec-brand-button-background: #c00;
+    --yt-spec-brand-link-text: #ff4e45;
+    --yt-spec-wordmark-text: #fff;
+    --yt-spec-error-indicator: #ff8983;
+    --yt-spec-themed-blue: #3ea6ff;
+    --yt-spec-themed-green: #2ba640;
+    --yt-spec-ad-indicator: #00aaa7;
+    --yt-spec-themed-overlay-background: rgba(0, 0, 0, 0.8);
+    --yt-spec-commerce-badge-background: #002d08;
+    --yt-spec-static-brand-red: #f00;
+    --yt-spec-static-brand-white: #fff;
+    --yt-spec-static-brand-black: #212121;
+    --yt-spec-static-clear-color: rgba(255, 255, 255, 0);
+    --yt-spec-static-clear-black: rgba(0, 0, 0, 0);
+    --yt-spec-static-ad-yellow: #fbc02d;
+    --yt-spec-static-grey: #606060;
+    --yt-spec-static-overlay-background-solid: #000;
+    --yt-spec-static-overlay-background-heavy: rgba(0, 0, 0, 0.8);
+    --yt-spec-static-overlay-background-medium: rgba(0, 0, 0, 0.6);
+    --yt-spec-static-overlay-background-medium-light: rgba(0, 0, 0, 0.3);
+    --yt-spec-static-overlay-background-light: rgba(0, 0, 0, 0.1);
+    --yt-spec-static-overlay-text-primary: #fff;
+    --yt-spec-static-overlay-text-primary-inverse: #030303;
+    --yt-spec-static-overlay-text-secondary: rgba(255, 255, 255, 0.7);
+    --yt-spec-static-overlay-text-disabled: rgba(255, 255, 255, 0.3);
+    --yt-spec-static-overlay-call-to-action: #3ea6ff;
+    --yt-spec-static-overlay-icon-active-other: #fff;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Cairo';
+    src: url('../fonts/Cairo-Bold.ttf');
+    font-weight: 700;
+}
+/*   Font of Montserrat    */
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Regular.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Medium.ttf');
+    font-weight: 500;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-SemiBold.ttf');
+    font-weight: 600;
+}
+@font-face {
+    font-family: 'Montserrat';
+    src: url('../fonts/Montserrat-Bold.ttf');
+    font-weight: 700;
+}
+ul{
+    list-style: none;
+}
+/* ======= General =======  */
+body{
+    direction: rtl;
+    background-color: var(--yt-spec-static-overlay-background-solid);
+    color: #fff;
+}
+/* ======= Main =======  */
+/* === Start Header Section === */
+header{
+    font-family: 'Montserrat';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 15px;
+}
+header .logo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+header .logo .fa-bars{
+    border: 1px solid var(--yt-spec-brand-icon-active);
+    border-radius: 80%;
+    margin: 10px 10px;
+    padding: 10px 10px;
+}
+header .logo h1{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 10px 10px;
+}
+header .logo sup{
+    color: var(--light-primary-color);
+    font-size: 12px;
+    font-weight: 400;
+    margin: 10px 4px;
+}
+header .logo .fa-youtube{
+    color: var(--yt-spec-brand-button-background);
+    font-size: 22px;
+}
+header .search{
+    padding: 5px 18px;
+    border: 1px solid var(--yt-spec-call-to-action-inverse);
+    border-radius: 15px;
+}
+header .search input{
+    padding: 10px 20px 10px 500px;
+    background-color: transparent;
+    border: none;
+}
+header .search input::placeholder{
+    font-family: 'Cairo';
+    font-size: 15px;
+}
+header .search .fa-keyboard{
+    font-size: 22px;
+}
+header .search .fa-magnifying-glass{
+    font-size: 22px;
+    margin-right: 8px;
+}
+
+header .notification .chosen{
+    background-color: var(--dark-theme-background-color);
+    color: var(--dark-theme-base-color);
+    font-size: 15px;
+}
+header .notification .login1{
+    padding: 10px 12px;
+    background-color: transparent;
+    color: var(--yt-spec-call-to-action);
+    font-family: 'Cairo';
+    font-size: 15px;
+    border: none;
+    border-radius: 20px;
+}
+header .notification button:nth-child(2){
+    border: 1px solid var(--yt-spec-call-to-action-inverse);
+    border-radius: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+header .notification button:nth-child(2):hover{
+    background-color: var(--yt-spec-call-to-action-inverse);
+    color: var(--yt-spec-icon-active-other);
+}
+.fa-user{
+    margin-left: 15px;
+    margin-right: 15px;
+    border: 1px solid var(--dark-primary-color);
+    border-radius: 50%;
+}
+/* === End Header Section === */
+/* === Start Main Section === */
+main{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 2em 4em 2em 2em;
+}
+/* ==********* Start Sidebar Section *******=== */
+main .sidebar{
+    width: 15%;
+    
+}
+main .sidebar .first-part{
+    font-family: 'Cairo';
+    font-size: 12px;
+    margin: 1em 0;
+}
+main .sidebar .first-part li{
+    font-size: 15px;
+}
+main .sidebar .first-part .fa-house{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .first-part .fa-speaker-deck{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .first-part .fa-circle-play{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+/*   End of the fisrt paart of the sidebar    */
+main .sidebar .second-part{
+    font-family: 'Cairo';
+    font-size: 12px;
+    margin: 1em 0;
+}
+main .sidebar .second-part li{
+    font-size: 15px;
+}
+main .sidebar .second-part .fa-circle-play{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .second-part .fa-clock{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+/*   End of the Second paart of the sidebar    */
+main .sidebar .mypro{
+    margin: 1em 0;
+    text-align: right;
+    font-family: 'Cairo';
+    font-size: 15px;
+}
+main .sidebar .login{
+    padding: 7px 10px;
+    background-color: transparent;
+    color: var(--yt-spec-call-to-action);
+    font-family: 'Cairo';
+    font-size: 15px;
+    border: 1px solid var(--yt-spec-call-to-action);
+    border-radius: 15px;
+    margin-bottom: 2em;
+    cursor: pointer;
+    transition: 0.5s all ease-in-out;
+}
+main .sidebar .login:hover{
+    background-color: var(--yt-spec-call-to-action-inverse);
+    color: var(--yt-spec-icon-active-other);
+}
+/*  End of prgph & button in the sidebr */ 
+main .sidebar h4{
+    font-family: 'Cairo';
+    font-size: 15px;
+    margin: 1em 0;
+    color: var(--yt-spec-ad-indicator);
+}
+main .sidebar .third-part{
+    font-family: 'Cairo';
+    font-size: 12px;
+    margin: 1em 0;
+}
+main .sidebar .third-part li{
+    font-size: 15px;
+}
+main .sidebar .third-part .fa-fire{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .third-part .fa-music{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .third-part .fa-podcast{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .third-part .fa-gamepad{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .third-part .fa-trophy{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+/* End of the third part of the sidebar    */
+main .sidebar .surf{
+    margin: 1em 0;
+    font-family: 'Cairo';
+    font-size: 15px;
+    font-weight: 500;
+}
+main .sidebar .fa-plus{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fourth-part{
+    font-family: 'Cairo';
+    font-size: 12px;
+    margin: 1em 0;
+}
+main .sidebar .fourth-part li{
+    font-size: 15px;
+}
+main .sidebar .fourth-part .fa-youtube{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fourth-part .fa-circle-play{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fourth-part .fa-square-youtube{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+/*  End of the fourth part of the sidebar  */
+main .sidebar .fifth-part{
+    font-family: 'Cairo';
+    font-size: 12px;
+    margin: 1em 0;
+}
+main .sidebar .fifth-part li{
+    font-size: 15px;
+}
+main .sidebar .fifth-part .fa-gear{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fifth-part .fa-flag{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fifth-part .fa-circle-question{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+main .sidebar .fifth-part .fa-circle-exclamation{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 16px;
+    margin-left: 1em;
+}
+/*  End of the fifth part of the sidebar   */
+main .sidebar .copy{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main .sidebar .copy .sixth-part{
+    font-family: 'Cairo';
+    font-size: 13px;
+    margin: 1em 0;
+    text-align: center;
+    color: var(--yt-spec-icon-disabled);
+}
+main .sidebar .copy .seventh-part{
+    font-family: 'Cairo';
+    font-size: 13px;
+    margin: 1em 0;
+    text-align: center;
+    color: var(--yt-spec-icon-disabled);
+}
+main .sidebar .copy .last-part{
+    font-family: 'Cairo';
+    font-size: 13px;
+    margin: 2.8em 0;
+    text-align: center;
+    color: var(--yt-spec-icon-disabled);
+}
+main .sidebar .eighth-part{
+    margin-top: 0.5em;
+    margin-bottom: 3em;
+    
+}
+main .sidebar .eighth-part .one{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 13px;
+    font-family: 'Cairo';
+    float: left;
+}
+main .sidebar .eighth-part .two{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 13px;
+    font-family: 'Cairo';
+    float: left;
+    margin-left: 20px;
+}
+main .sidebar .eighth-part .three{
+    color: var(--yt-spec-icon-disabled);
+    font-size: 13px;
+    font-family: 'Cairo';
+    float: right;
+}
+.clrrr2{
+    clear: both;
+}
+main .sidebar .other-part{
+    font-family: 'Cairo';
+    font-size: 15px;
+    color: var(--yt-spec-icon-disabled);
+    margin: 1em 0;
+}
+/* ==********* End Sidebar Section *******=== */
+/* ==********* Start page-body Section *******=== */
+main .page-body{
+    width: 85%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+main .page-body .clr1{
+    background-color: red;
+    margin: 8px 7px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    height: 45%;
+}
+main .page-body .clr2{
+    background-color: blue;
+    margin: 8px 7px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    height: 45%;
+}
+main .page-body .clr3{
+    background-color: blueviolet;
+    margin: 8px 7px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    height: 45%;
+}
+main .page-body .clr4{
+    background-color: green;
+    margin: 8px 7px;
+    border-radius: 10px;
+    font-size: 50px;
+    font-family: 'Montserrat';
+    height: 45%;
+}
+/* ==********* End page-body Section *******=== */
+/* === End Main Section === */
+/* ======= Media Query =======  */
